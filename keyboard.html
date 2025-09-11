@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keyboardStyle.css">
+    <title>Keyboard</title>
+</head>
+<body>
+    
+    <div id="keyboard-Container">
+    <textarea id="inputText" rows="20" cols="80" oninput="keyboardOutput()"></textarea>
+
+    <div class="keysColumns" oninput="press()">
+        <div id="firstColumn">
+            <button id="escKey">ESC</button>
+            <button id="tilde_backtickSign" value="`">~<br>`</button>
+            <button id="oneBtn_exclamationMarkSign" value="1">!<br>1</button>
+            <button id="twoBtn_atSign" value="2">@<br>2</button>
+            <button id="threeBtn_hashtagSign" value="3">#<br>3</button>
+            <button id="fourBtn_dollarSign" value="4">$<br>4</button>
+            <button id="fiveBtn_percentSign" value="5">%<br>5</button>
+            <button id="sixBtn_caretSign" value="6">^<br>6</button>
+            <button id="sevenBtn_andSign" value="7">&<br>7</button>
+            <button id="eightBtn_asteriskSign" value="8">*<br>8</button>
+            <button id="nineBtn_openParenthesisSign" value="9">(<br>9</button>
+            <button id="zeroBtn_closedParenthesisSign" value="0">)<br>0</button>
+            <button id="dash_underScoreSign" value="-">_<br>-</button>
+            <button id="addOperator_equalSign" value="=">+<br>=</button>
+            <button id="backspaceKey">Backspace<br>&longleftarrow;</button>
+        </div>
+
+        <div id="secondColumn">
+            <button id="tabKey">Tab<br>&#x27F7;&#124;</button>
+            <button id="Q_Key" value="q">Q</button>
+            <button id="W_Key" value="w">W</button>
+            <button id="E_Key" value="e">E</button>
+            <button id="R_Key" value="r">R</button>
+            <button id="T_Key" value="t">T</button>
+            <button id="Y_Key" value="y">Y</button>
+            <button id="U_Key" value="u">U</button>
+            <button id="I_Key" value="i">I</button>
+            <button id="O_Key" value="o">O</button>
+            <button id="P_Key" value="p">P</button>
+            <button id="openBracketSign" value="[">{<br>[</button>
+            <button id="closedBracketSign" value="]">}<br>]</button>
+            <button id="verticalBar_backslashSign" value="\">|<br>\</button>
+        </div>
+
+        <div id="thirdColumn">
+            <button id="capsLockKey">Caps Lock</button>
+            <button id="A_Key" value="a">A</button>
+            <button id="S_Key" value="s">S</button>
+            <button id="D_Key" value="d">D</button>
+            <button id="F_Key" value="f">F</button>
+            <button id="G_Key" value="g">G</button>
+            <button id="H_Key" value="h">H</button>
+            <button id="J_Key" value="j">J</button>
+            <button id="K_Key" value="k">K</button>
+            <button id="L_Key" value="l">L</button>
+            <button id="colon_semiColonSign" value=";">:<br>;</button>
+            <button id="quotationSign" value="'">"<br>'</button>
+            <button id="enterKey">Enter</button>
+        </div>
+
+        <div id="fourthColumn">
+            <button id="shiftKey1">Shift</button>
+            <button id="Z_Key" value="z">Z</button>
+            <button id="X_Key" value="x">X</button>
+            <button id="C_Key" value="c">C</button>
+            <button id="V_Key" value="v">V</button>
+            <button id="B_Key" value="b">B</button>
+            <button id="N_Key" value="n">N</button>
+            <button id="M_Key" value="m">M</button>
+            <button id="lessThan_commaSign" value=",">&lt;<br>,</button>
+            <button id="greaterThan_periodSign" value=".">&gt;<br>.</button>
+            <button id="questionMark_forwardslashSign" value="/">?<br>/</button>
+            <button id="shiftKey2">Shift</button>
+        </div>
+
+        <div id="fifth column">
+            <button id="controlKey1">Ctrl</button>
+            <button id="altKey1">Alt</button>
+            <button id="spaceKey"></button>
+            <button id="altKey2">Alt</button>
+            <button id="controlKey2">Ctrl</button>
+            <div id="arrowKeys">
+                <button id="leftArrow">&#9668;</button>
+                <button id="upArrow">&#9650;</button>
+                <button id="downArrow">&#9660;</button>
+                <button id="rightArrow">&#9658;</button>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="keyboard.js"></script>
+</body>
+</html>

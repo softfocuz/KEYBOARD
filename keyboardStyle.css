@@ -1,0 +1,137 @@
+body{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 90px;
+  background-color: #FDF6F9;
+}
+
+textarea {
+  /*textArea Fixed Size*/
+  width: 50rem;
+  height: 8rem;
+  resize: none;
+
+  /*textArea Fixed Style*/
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  color: #3A3A3A;
+  background-color: #FFFFFF; 
+  border: 1px solid #E0BFC7; 
+  border-radius: 12px; 
+  padding: 12px;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(244, 143, 177, 0.3);
+}
+
+
+
+/*BUTTONS FIXED SIZE AND LOCATIONS*/
+
+.keysColumns > div{
+  display: flex;
+  flex-wrap: wrap;     
+  gap: 4px;         
+}
+
+.keysColumns{
+  margin-top: 10vh;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6),
+                    0 2px 4px rgba(0, 0, 0, 0.08);
+  background: rgba(252, 228, 236, 0.8);
+  backdrop-filter: blur(6px);
+  
+}
+
+button{
+  margin-bottom: 4px;
+  margin-top: 2px;
+  width: 3rem; 
+  background-color: #FCE4EC;
+  border-color: #E0BFC7;
+  border-radius: 10px;
+  color: #3A3A3A;
+  text-align: center; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+button:hover{
+  background-color: #faecf2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+
+#escKey{
+  width: 2.2rem;
+  height: 1.5rem;
+  font-size: 10px;
+  margin-top: 9px;
+}
+
+#backspaceKey{
+  width: 5.7rem;
+  font-size: 12px;
+}
+
+#capsLockKey, #tabKey{
+  width: 8.2rem;
+  font-size: 12px;
+  text-align: left;
+}
+
+#enterKey{
+  width: 6.2rem;
+  font-size: 12px;
+}
+
+#shiftKey1, #shiftKey2{
+  width: 8.81rem;
+  font-size: 12px;
+}
+
+#shiftKey1, #controlKey1{
+  text-align: left;
+}
+
+#shiftKey2, #enterKey, #backspaceKey{
+  text-align: right;
+}
+
+#controlKey1{
+  width: 5rem;
+  font-size: 12px;
+}
+
+#spaceKey{
+  width: 27.1rem;
+}
+
+#arrowKeys{
+  width: 1.5rem;
+  height: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+#escKey,#capsLockKey, #tabKey, #controlKey1, #controlKey2, #shiftKey1, #shiftKey2, #enterKey, #backspaceKey, #altKey1, #altKey2, #arrowKeys button{
+  background-color: #F48FB1;
+  color: #FFFFFF;
+}
+
+#escKey:hover,#capsLockKey:hover, #tabKey:hover, #controlKey1:hover, #controlKey2:hover, #shiftKey1:hover, #shiftKey2:hover, #enterKey:hover, #backspaceKey:hover, #altKey1:hover, #altKey2:hover, #arrowKeys button:hover{
+  background-color: #F06292; 
+  box-shadow: 0 2px 6px rgba(240, 98, 146, 0.4);
+}
+
+
+
